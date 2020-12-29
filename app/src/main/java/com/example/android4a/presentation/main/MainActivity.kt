@@ -1,5 +1,6 @@
 package com.example.android4a.presentation.main
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.*
@@ -21,6 +22,13 @@ class MainActivity : AppCompatActivity() {
             when(it){
                 is LoginSuccess -> {
                     //TODO Navigate
+                    MaterialAlertDialogBuilder(this)
+                        .setTitle("succes")
+                        .setMessage("compte connu")
+                        .setPositiveButton("Ok") { dialog, which ->
+                            dialog.dismiss()
+                        }
+                        .show()
                 }
                 LoginError -> {
                     MaterialAlertDialogBuilder(this)
@@ -35,7 +43,13 @@ class MainActivity : AppCompatActivity() {
         })
 
         login_button.setOnClickListener{
+
             mainViewModel.onClickedLogin(login_edit.text.toString().trim(), password_edit.text.toString())
+        }
+        create_account_button.setOnClickListener{
+
+            val intent = Intent(this, MainActivityCreateAccount::class.java)
+            startActivity(intent)
         }
 
     }
