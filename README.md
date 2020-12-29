@@ -29,3 +29,23 @@ Ainsi cette application permet d'aider une personne à exercer le mouvement d'un
 ## Fonctionnalités :
 ### Premier écran
 - Page de connexion.
+
+![ ](image_readme/1.PNG)            ![ ](image_readme/2.PNG)
+
+
+### deuxième écran
+- Page de creation de compte
+
+![ ](image_readme/3.PNG) 
+
+
+### Troisième écran
+- Liste de RecyclerView.
+
+![ ](image_readme/4.PNG)
+
+
+### Quatrième écran
+- Détail de l'élement (Image + URL)
+
+![ ](image_readme/5.PNG)
