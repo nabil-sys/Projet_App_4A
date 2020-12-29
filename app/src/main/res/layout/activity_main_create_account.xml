@@ -62,6 +62,21 @@
         android:text="Create my Account"
         />
 
+    <TextView
+        android:id="@+id/text_acceuil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/seymour_one"
+        android:text="I create\nMyAccount"
+        android:textColor="#9C27B0"
+        android:textSize="26sp"
+        android:textStyle="italic"
+
+        app:layout_constraintBottom_toTopOf="@id/login_input_layout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
