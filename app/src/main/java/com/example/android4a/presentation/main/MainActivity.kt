@@ -22,13 +22,15 @@ class MainActivity : AppCompatActivity() {
             when(it){
                 is LoginSuccess -> {
                     //TODO Navigate
-                    MaterialAlertDialogBuilder(this)
+                   /* MaterialAlertDialogBuilder(this)
                         .setTitle("succes")
                         .setMessage("compte connu")
                         .setPositiveButton("Ok") { dialog, which ->
                             dialog.dismiss()
                         }
-                        .show()
+                        .show()*/
+                    val intent = Intent(this, MainActivity2::class.java)
+                    startActivity(intent)
                 }
                 LoginError -> {
                     MaterialAlertDialogBuilder(this)
